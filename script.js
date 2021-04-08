@@ -1,0 +1,1 @@
+document.getElementById("footerp").innerHTML = '&#169; 2021 Hikmet Celik';

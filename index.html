@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PLASTRON P.E. SERA</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap" rel="stylesheet">
+	
+    <style type="text/css">
+    body {
+		font-size: 1.2em;
+        margin: 0;
+		background: hsl(0,0%,100%);
+    }
+    figure {
+    	display: block;
+    	background: hsl(144,100%,27%);
+    	width:100%;
+    	box-sizing: border-box;
+    	margin: 1rem auto;
+	}
+    figure > div {
+    	display: block;
+    	vertical-align: middle;
+	}
+	figure > div img {
+    	margin:0.5rem;
+	height:8rem;
+	}
+    header {
+        background-color: hsl(0,0%,100%);
+        text-align: center;
+        font-size: 1.4em;
+    }
+    .column {
+	float:left;
+	padding: 5px;
+	}
+    .column.sidenav {
+        background-color: hsl(0,0%,100%);
+        font-size: 1.4rem;
+        font-weight: bold;
+        font-family: Comfortaa;
+        width: 11%;
+		height:100%;
+    }
+    .column.sidenav a {
+		text-decoration: none !important;
+        color: hsl(144,100%,27%);
+        padding: 0.6rem;
+        display: block;
+    }
+
+    .column.sidenav a:hover {
+        background-color: hsl(144,100%,27%);
+        color: hsl(0,0%,100%);
+        animation-name: fade;
+        animation-duration: 300ms;
+        animation-fill-mode: forwards;
+    }
+    @keyframes fade{
+        from{opacity:0.1;}
+        to {opacity:1;}
+    }
+    .column.mainright{
+        width:89%;
+        background-color:hsl(0,0%,7%);
+        margin-left: 11%;
+  		padding-left: 2em;
+    }
+    .contacts {
+        margin: 0.5rem;
+        padding: 0.5rem;
+        border: solid;
+        border-color: hsl(309,44%,26%);
+        border-radius: 5px;
+    }
+    .cards {
+        width: 250px;
+        padding: 0px;
+        border: solid;
+        border-color: hsl(309,44%,26%);
+        border-radius: 5px;
+    }
+   	@media (max-width: 600px) {
+		.column.sidenav, .column.mainright {
+			width: 100%;
+  		}
+	}
+    .row:after {
+		content="";
+		display: table;
+		clear: both;
+	}
+	footer {
+        background-color: hsl(144,100%,27%);
+        color: hsl(0,0%,100%);
+        padding: 10px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+       <figure><div>
+        <img class="figure" src="./PlastronLogo.svg" alt="Plastron Corp Logo">
+        </div></figure>
+    </header>
+
+    <nav class="column sidenav">
+        <a href="#home">plastron</a>
+            <a href="#products">ürünlerimiz</a>
+            <a href="#dealers">bayilerimiz</a>
+            <a href="#references">referanslar</a>
+            <a href="#news">haberler</a>
+            <a href="#articles">makaleler</a> 
+            <a href="#contacts">iletişim</a>
+    </nav>
+    <main class="column mainright">
+        <article>Plastron Tarım Antalya/Aksu</article>
+
+        <section>
+            <div class="cards">ALİ BOLAT ZİRAAT M&Uuml;HENDİSİ</div>
+
+            <div class="cards">Hikmet &Ccedil;elik UZMAN BİYOLOG</div>
+        </section>
+    </main>
+	<div class="row"></div>
+    <footer>2021 Hikmet Celik</footer>
+</body>
+</html>
