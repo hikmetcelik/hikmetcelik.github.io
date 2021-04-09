@@ -1,127 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Marriweather:wght@300;400;700;900&display=swap');
-*{
-   box-sizing: border-box;
-} 
-body {
-   margin: 0;
-   background: hsl(0,0%,100%);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Light&family=Lora+Regular&display=swap');
+*,
+*::before,
+*::after{
+	margin:0;
+	padding:0;
 }
-figure {
-   display: block;
-   background: hsl(0,0%,100%);
-   width: 100%;
-   border: 2px solid white;
-   margin: 0;
-   border-bottom-color: hsl(144,100%,27%);
-}
-figure > div {
-   display: block;
-   vertical-align: middle;
-}
-figure > div img {
-   margin:0.5rem;
-   height:8rem;
-}
-header {
-   background-color: hsl(0,0%,100%);
-   text-align: center;
-   font-size: 1.4em;
-}
-.row::after {
-   content: "";
-   display: table;
-   clear: both;
-   border: 1px solid black;
-}
-.sidenav {
-   background-color: hsl(0,0%,100%);
-   font-family: 'Comfortaa', cursive;
-   font-weight: 700 !important;
-   font-size: 1.8em;
-   width: 23%;
-   float: left;
-}
-.sidenav a {
-   text-decoration: none;
-   color: hsl(144,100%,27%);
-   padding: 0.6rem;
-   display: block;
+:root{
+	--main-red:#731627;
+	--main-green:#77A98A;
+	--main-blue:#383D4E;
+	--main-yellow:#DEE688;
+	--main-white: #DFE9B6;
 }
 
-.sidenav a:hover {
-   background-color: hsl(144,100%,27%);
-   color: hsl(0,0%,100%);
-   animation-name: fade;
-   animation-duration: 400ms;
-   animation-fill-mode: forwards;
- }
-@keyframes fade{
-   from {opacity:0.1;}
-   to {opacity:1;}
+h1,h2,h3,h4 {
+	font-family: Montserrat Light;
 }
-.mainright{
-   float: left;
-   width:72%;
-   border-radius: 3%;
-   background-color:hsl( 300, 90%, 97%);
-   padding: 0.5rem 0 0 4rem;
-   margin: 0.1rem;
-   overflow: scroll;
-}
-.mainright h1{
-	text-align: center;
-}
-.contacts {
-   margin: 0.5rem;
-   padding: 0.5rem;
-   border: solid;
-   border-color: hsl(309,44%,26%);
-   border-radius: 5px;
-}
-.cards {
-   padding: 0px;
-   border: solid;
-   border-color: hsl(309,44%,26%);
-   border-radius: 5px;
-}
-@media (max-width: 600px) {
-  
-   .sidenav, .mainright {
-	width: 100%;
-   }
-  .sidenav a{text-align: center}
-}
-footer {
-   color: hsl(0,0%,100%);
-   background-color: hsl(144,100%,27%);
-   padding-top: 1.5rem;
-   padding-right: 1.5rem;
-   margin: 0px auto;
-   width: 100%;
-   height: 20vh;
-   display:block;
-   float: none !important;
-   text-align: right;
-}
-h1, h2, h3, h4, h5 { 
-   font-family:'Marriweather', serif;
-}
-h1{font-size: 2rem;}
-h2{font-size: 1.8rem;}
-h3{font-size: 1.6rem;}
-h4{font-size: 1.4rem;}
-h5{font-size: 1.2rem;}
 p{
-	font-family: Open Sans;
-	font-size: 1rem;
-	}
-
-::selection{
-	color: hsl(0,0%,100%);
-	background-color: hsl(144,100%,27%);
-}
-
-// contacts page //
-address {
-	padding: 0px;
+	font-family: Lora Regular;
 }
